@@ -1,0 +1,117 @@
+/*_ _ _ _ _ _ _ _ _
+Fuentes
+_ _ _ _ _ _ _ _ _*/
+@import url("https://fonts.googleapis.com/css2?family==Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
+
+/*_ _ _ _ _ _ _ _ _
+Global CSS
+_ _ _ _ _ _ _ _ _*/
+:root{
+    /*Ligth Blue*/
+    --lb100: #f3f5fc;
+    --lb200: #eff1fa;
+    --lb300: #e9ecf8;
+    --lb400: #aab2d5;
+    --lb500: #757fb2;
+
+    /*Gray*/
+    --g100: #ced4da;
+    --g200: #adb5bd;
+    --g300: #868e96;
+    --g400: #495057;
+    --g500: #343a40;
+
+    /*Dark Blue*/
+    --db100: #609ed4;
+    --db200: #356ea9;
+    --db300: #0a3871;
+    --db400: #072b61;
+    --db500: #052051;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    background: var(--lb100);
+}
+::selection{
+    background: var(--db300);
+    color: var(--lb100);
+}
+body{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+}
+
+/*_ _ _ _ _ _ _ _ _
+Encabezado
+_ _ _ _ _ _ _ _ _*/
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+/*_ _ _ _ _ _ _ _ _
+Principal
+_ _ _ _ _ _ _ _ _*/
+main{
+    display: flex;
+    flex-direction: row;
+    background: var(--lb100);
+}
+.encriptador{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+.encriptar{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--g200);
+    resize: none;
+    border-radius: 15px;
+}
+.encriptar::placeholder,:focus{
+    color: var(--db400);
+}
+.encriptador-alerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+.texto-alerta{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--g400);
+}
+.encriptador-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
